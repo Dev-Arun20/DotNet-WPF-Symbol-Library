@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iR5E0249Orw=",
+  "success": true,
+  "projectFilePath": "D:\\SymbolLibrary_MVVM_Fixed_OriginalKit\\SymbolLibrarySolution\\SymbolLibrary.Core\\SymbolLibrary.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Arun\\.nuget\\packages\\netdxf.netstandard\\3.0.1\\netdxf.netstandard.3.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,36 @@
+<UserControl x:Class="SymbolLibrary.Wpf.SymbolLibraryPanel"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ xmlns:local="clr-namespace:SymbolLibrary.Wpf"
+ Background="#F8FAFD">
+ <UserControl.Resources>
+   <Style x:Key="FlatButton" TargetType="Button"><Setter Property="Background" Value="#E5EFFD"/><Setter Property="Foreground" Value="#225A9F"/><Setter Property="BorderThickness" Value="0"/><Setter Property="Padding" Value="12,9"/><Setter Property="Cursor" Value="Hand"/></Style>
+ </UserControl.Resources>
+ <DockPanel Margin="16">
+  <StackPanel DockPanel.Dock="Top">
+    <TextBlock Text="SYMBOL LIBRARY" FontSize="19" FontWeight="Bold" Foreground="#172541"/>
+    <TextBlock Text="Drag a symbol onto the drawing" FontSize="12" Foreground="#66758C" Margin="0,5,0,16"/>
+    <Button Content="Choose Symbols Folder" Click="ChooseFolderClick" Style="{StaticResource FlatButton}" Margin="0,0,0,12"/>
+    <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" Padding="10,9" FontSize="13" ToolTip="Search symbols by name"/>
+    <TextBlock Text="{Binding VisibleCount, StringFormat={}{0} symbols}" FontSize="12" Foreground="#64748B" Margin="0,10,0,10"/>
+  </StackPanel>
+  <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+   <ItemsControl ItemsSource="{Binding FilteredSymbols}">
+     <ItemsControl.ItemsPanel><ItemsPanelTemplate><WrapPanel/></ItemsPanelTemplate></ItemsControl.ItemsPanel>
+     <ItemsControl.ItemTemplate>
+      <DataTemplate>
+       <Border Width="154" Margin="0,0,9,9" Padding="9" Background="White" BorderBrush="#DCE5F0" BorderThickness="1" CornerRadius="9" Cursor="Hand" ToolTip="{Binding FilePath}" PreviewMouseLeftButtonDown="CardMouseDown" PreviewMouseMove="CardMouseMove" PreviewMouseLeftButtonUp="CardMouseUp">
+        <StackPanel>
+         <Border Background="#F5F8FC" Height="108" CornerRadius="5">
+          <local:GeometryView Geometry="{Binding Geometry}" Ink="#344A6F"/>
+         </Border>
+         <TextBlock Text="{Binding Name}" FontWeight="SemiBold" TextTrimming="CharacterEllipsis" Margin="0,8,0,3"/>
+         <TextBlock Text="{Binding Category}" FontSize="11" Foreground="#64748B" TextTrimming="CharacterEllipsis"/>
+        </StackPanel>
+       </Border>
+      </DataTemplate>
+     </ItemsControl.ItemTemplate>
+   </ItemsControl>
+  </ScrollViewer>
+ </DockPanel>
+</UserControl>

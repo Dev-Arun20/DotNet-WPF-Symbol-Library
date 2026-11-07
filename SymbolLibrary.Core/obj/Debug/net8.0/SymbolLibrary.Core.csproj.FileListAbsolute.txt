@@ -1,0 +1,12 @@
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\bin\Debug\net8.0\SymbolLibrary.Core.deps.json
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\bin\Debug\net8.0\SymbolLibrary.Core.dll
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\bin\Debug\net8.0\SymbolLibrary.Core.pdb
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\obj\Debug\net8.0\SymbolLibrary.Core.csproj.AssemblyReference.cache
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\obj\Debug\net8.0\SymbolLibrary.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\obj\Debug\net8.0\SymbolLibrary.Core.AssemblyInfoInputs.cache
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\obj\Debug\net8.0\SymbolLibrary.Core.AssemblyInfo.cs
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\obj\Debug\net8.0\SymbolLibrary.Core.csproj.CoreCompileInputs.cache
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\obj\Debug\net8.0\SymbolLibrary.Core.dll
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\obj\Debug\net8.0\refint\SymbolLibrary.Core.dll
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\obj\Debug\net8.0\SymbolLibrary.Core.pdb
+D:\SymbolLibrary_MVVM_Fixed_OriginalKit\SymbolLibrarySolution\SymbolLibrary.Core\obj\Debug\net8.0\ref\SymbolLibrary.Core.dll

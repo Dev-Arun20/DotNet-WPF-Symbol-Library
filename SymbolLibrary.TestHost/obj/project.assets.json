@@ -1,0 +1,159 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows7.0": {
+      "netDxf.netstandard/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/netDxf.netstandard.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/netDxf.netstandard.dll": {}
+        }
+      },
+      "SymbolLibrary.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "netDxf.netstandard": "3.0.1"
+        },
+        "compile": {
+          "bin/placeholder/SymbolLibrary.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SymbolLibrary.Core.dll": {}
+        }
+      },
+      "SymbolLibrary.Wpf/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SymbolLibrary.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SymbolLibrary.Wpf.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SymbolLibrary.Wpf.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "netDxf.netstandard/3.0.1": {
+      "sha512": "ZNws3IGBLZjPx5LgeC+TimaFgZdChRkImIrB894z0mO+orZUA6Ew241amaSWwdAY2cogDmXJdSwuC1gVI13AvA==",
+      "type": "package",
+      "path": "netdxf.netstandard/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net471/netDxf.netstandard.dll",
+        "lib/net471/netDxf.xml",
+        "lib/net48/netDxf.netstandard.dll",
+        "lib/net48/netDxf.xml",
+        "lib/net6.0/netDxf.netstandard.dll",
+        "lib/net6.0/netDxf.xml",
+        "lib/net8.0/netDxf.netstandard.dll",
+        "lib/net8.0/netDxf.xml",
+        "lib/netstandard2.0/netDxf.netstandard.dll",
+        "lib/netstandard2.0/netDxf.xml",
+        "netdxf.netstandard.3.0.1.nupkg.sha512",
+        "netdxf.netstandard.nuspec"
+      ]
+    },
+    "SymbolLibrary.Core/1.0.0": {
+      "type": "project",
+      "path": "../SymbolLibrary.Core/SymbolLibrary.Core.csproj",
+      "msbuildProject": "../SymbolLibrary.Core/SymbolLibrary.Core.csproj"
+    },
+    "SymbolLibrary.Wpf/1.0.0": {
+      "type": "project",
+      "path": "../SymbolLibrary.Wpf/SymbolLibrary.Wpf.csproj",
+      "msbuildProject": "../SymbolLibrary.Wpf/SymbolLibrary.Wpf.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0-windows7.0": [
+      "SymbolLibrary.Wpf >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Arun\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\SymbolLibrary_MVVM_Fixed_OriginalKit\\SymbolLibrarySolution\\SymbolLibrary.TestHost\\SymbolLibrary.TestHost.csproj",
+      "projectName": "SymbolLibrary.TestHost",
+      "projectPath": "D:\\SymbolLibrary_MVVM_Fixed_OriginalKit\\SymbolLibrarySolution\\SymbolLibrary.TestHost\\SymbolLibrary.TestHost.csproj",
+      "packagesPath": "C:\\Users\\Arun\\.nuget\\packages\\",
+      "outputPath": "D:\\SymbolLibrary_MVVM_Fixed_OriginalKit\\SymbolLibrarySolution\\SymbolLibrary.TestHost\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Arun\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "projectReferences": {
+            "D:\\SymbolLibrary_MVVM_Fixed_OriginalKit\\SymbolLibrarySolution\\SymbolLibrary.Wpf\\SymbolLibrary.Wpf.csproj": {
+              "projectPath": "D:\\SymbolLibrary_MVVM_Fixed_OriginalKit\\SymbolLibrarySolution\\SymbolLibrary.Wpf\\SymbolLibrary.Wpf.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net8.0-windows7.0": {
+        "targetAlias": "net8.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

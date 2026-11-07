@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "SymbolLibrary.TestHost/1.0.0": {
+        "dependencies": {
+          "SymbolLibrary.Wpf": "1.0.0"
+        },
+        "runtime": {
+          "SymbolLibrary.TestHost.dll": {}
+        }
+      },
+      "netDxf.netstandard/3.0.1": {
+        "runtime": {
+          "lib/net8.0/netDxf.netstandard.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "SymbolLibrary.Core/1.0.0": {
+        "dependencies": {
+          "netDxf.netstandard": "3.0.1"
+        },
+        "runtime": {
+          "SymbolLibrary.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SymbolLibrary.Wpf/1.0.0": {
+        "dependencies": {
+          "SymbolLibrary.Core": "1.0.0"
+        },
+        "runtime": {
+          "SymbolLibrary.Wpf.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SymbolLibrary.TestHost/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "netDxf.netstandard/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZNws3IGBLZjPx5LgeC+TimaFgZdChRkImIrB894z0mO+orZUA6Ew241amaSWwdAY2cogDmXJdSwuC1gVI13AvA==",
+      "path": "netdxf.netstandard/3.0.1",
+      "hashPath": "netdxf.netstandard.3.0.1.nupkg.sha512"
+    },
+    "SymbolLibrary.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SymbolLibrary.Wpf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

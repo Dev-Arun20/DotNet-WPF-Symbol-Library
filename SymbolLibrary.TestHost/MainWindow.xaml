@@ -1,0 +1,20 @@
+<Window x:Class="SymbolLibrary.TestHost.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:lib="clr-namespace:SymbolLibrary.Wpf;assembly=SymbolLibrary.Wpf" Title="Symbol Library · CAD Workspace" Width="1370" Height="850" MinWidth="900" MinHeight="550" WindowStartupLocation="CenterScreen" Background="#F2F5FA">
+ <Grid>
+ <Grid.RowDefinitions><RowDefinition Height="64"/><RowDefinition Height="*"/><RowDefinition Height="38"/></Grid.RowDefinitions>
+ <Border Background="#172541" Grid.Row="0">
+  <DockPanel Margin="22,0">
+   <StackPanel Orientation="Horizontal" DockPanel.Dock="Left" VerticalAlignment="Center"><TextBlock Text="CAD" FontWeight="Bold" FontSize="21" Foreground="#5AD1E6"/><TextBlock Text="  /  SYMBOL WORKSPACE" FontSize="14" FontWeight="SemiBold" Foreground="White" VerticalAlignment="Center"/></StackPanel>
+   <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center"><Button Content="Open DXF Drawing" Click="OpenDrawingClick" Padding="16,8" Margin="0,0,8,0"/><Button Content="Fit to Window" Click="FitClick" Padding="16,8"/></StackPanel>
+  </DockPanel>
+ </Border>
+ <Grid Grid.Row="1" Margin="14"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="390"/></Grid.ColumnDefinitions>
+  <Border Grid.Column="0" Background="White" CornerRadius="12" BorderBrush="#DAE2EE" BorderThickness="1" Margin="0,0,12,0"><Grid>
+   <Grid.RowDefinitions><RowDefinition Height="46"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+   <DockPanel Grid.Row="0" Margin="18,0"><TextBlock Text="DRAWING CANVAS" Foreground="#273B58" FontSize="13" FontWeight="Bold" VerticalAlignment="Center"/><TextBlock Text="Mouse wheel zoom · DXF units: mm" Foreground="#8793A5" FontSize="12" HorizontalAlignment="Right" VerticalAlignment="Center"/></DockPanel>
+   <Border Grid.Row="1" Margin="12" BorderThickness="1" BorderBrush="#ECF0F5" Background="#FAFCFF" CornerRadius="6"><lib:GeometryView x:Name="DrawingView" Geometry="{Binding Drawing}" AllowDrop="True" DragOver="DrawingDragOver" Drop="DrawingDrop"/></Border>
+  </Grid></Border>
+  <Border Grid.Column="1" CornerRadius="12" BorderBrush="#DAE2EE" BorderThickness="1" ClipToBounds="True"><lib:SymbolLibraryPanel x:Name="Symbols"/></Border>
+ </Grid>
+ <Border Grid.Row="2" Background="#E6ECF5"><DockPanel Margin="20,0"><TextBlock Text="{Binding PlacementLabel}" Foreground="#415470" FontSize="12" VerticalAlignment="Center" DockPanel.Dock="Right"/><TextBlock Text="{Binding Status}" Foreground="#415470" FontSize="12" VerticalAlignment="Center" TextTrimming="CharacterEllipsis"/></DockPanel></Border>
+ </Grid>
+</Window>

@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><TargetFramework>net8.0-windows</TargetFramework><UseWPF>true</UseWPF><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
+  <ItemGroup><ProjectReference Include="..\SymbolLibrary.Wpf\SymbolLibrary.Wpf.csproj" /></ItemGroup>
+  <ItemGroup><None Include="..\03_Sample_Symbols\**\*.dxf" Link="03_Sample_Symbols\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest"/><None Include="..\04_Sample_Drawing\**\*.dxf" Link="04_Sample_Drawing\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest"/></ItemGroup>
+</Project>
